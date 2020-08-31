@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+<body>  
+    <header>Fun with Forms</header>
+    <div id="form">
+    <form>
+        <label for="name">Name</label>
+        <input type="text" name="name"id="name" value="Your name"><span id="namehelp"></span>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email"id="email" value="Your e-mail"><span id="emailhelp"></span>
+        <br>
+        <label for="password">Password</label>
+        <input type="text" name="password"id="password" value=""><span id="passwordhelp"></span>
+        <br>
+        <label for="confirm-password">Confirm Password</label>
+        <input type="text" name="confirm-password"id="confirm-password" value=""><span id="confirm-passwordhelp"></span>
+        <br>
+        <p id="result"></p>
+        <br>
+        <label for="about">About</label>
+        <textarea id="about" name="about"></textarea><span id="abouthelp"></span>
+        <br>
+        <input type="checkbox" name="confirmation" id="confirmation">
+        <label for="confirmation">Send me a confirmation email</label>
+        <br>
+        <p>Do you agree with the terms?</p>
+        <input type="radio" name="choose" id="agree">
+        <label for="agree">Agree</label>
+        <br>
+        <input type="radio" name="choose" id="disagree">
+        <label for="disagree">Disagree</label>
+        <br>
+
+        <label for="nationality">Nationality</label>
+	    <select name="nationality" id="nationality">
+        <option value="RO" selected>Romanian</option>
+        <option value="HU">Hungarian</option>
+        <option value="ES">English</option>
+        <option value="XX"></option>
+        </select>
+        <br>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="female" selected>Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+        <p>Do you want news?</p>
+        <input type="radio" name="send" id="want-to">
+        <label for="want-to">Send me news</label>
+        <br>
+        <input type="radio" name="send" id="dont-want-to" value='no'checked>
+        <label for="dont-want-to">Don't send anything</label>
+        
+        <br>
+
+        <input type="submit"value="submit">
+        <input type="reset"value="cancel">
+
+    </form>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
