@@ -1,0 +1,69 @@
+.signup__field__input--error {
+    border: 1px solid red;
+}
+  
+  .signup__field__error {
+    color: red;
+}
+body{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(#141e30, #243b55);
+    
+}
+.wrapper{
+    width: 30rem;
+    margin:10% auto;
+    padding:40px 30px ;
+    color:white;
+    background: rgba(0,0,0,.5);
+    line-height: 20px;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    display: flex;
+    justify-content: space-evenly;
+}
+  
+fieldset{
+    border:none;
+}
+
+input[type="text"],input[type="password"]{
+    background-color:#0c121c;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    margin-bottom: 30px;
+    color:white;
+
+}
+button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    border:none;
+    background-color: transparent;
+
+}
+
+button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
