@@ -82,10 +82,20 @@ function validateDay(day){
     const dayREG=/^[0-9]{1,2}$/;
     if(!dayREG.test(day)){throw new ValidationError('invalid day')}
 }
+function validateMonth(month){
+  const monthREG=/^(0?[1-9]|1[012])$/;
+  if(!monthREG.test(month)){throw new ValidationError('invalid month')}
+}
 function validateYear(year){
     const yearREG=/^[0-9]{4}$/;
     if(!yearREG.test(year)){throw new ValidationError('invalid year')}
 }
+function validatePhone(year){
+  const phoneREG=/\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/;
+  if(!phoneREG.test(year)){throw new ValidationError('invalid number')}
+}
+
+
 
 
 const validateMap={
@@ -93,7 +103,9 @@ const validateMap={
     'email':validateEmail,
     'username':validateUser,
     'day':validateDay,
+    'month':validateMonth,
     'year':validateYear,
+    'phoneNumber':validatePhone,
     'password': validatePassword,
     'confirmPassword': validateConfirmPassword
   
