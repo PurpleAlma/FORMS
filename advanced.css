@@ -39,8 +39,19 @@ input[type="text"],input[type="password"]{
     background: transparent;
     margin-bottom: 30px;
     color:white;
-
+    height: 20px;
+    overflow: hidden;
 }
+
+input[type="text"]:hover,input[type="password"]:hover{
+    box-shadow: 0 0 5px #03e9f4,
+    0 0 12px #03e9f4,
+    0 0 50px #03e9f4,
+    0 0 50px #03e9f4;
+    transition: .2s;
+    border-bottom: 1px solid transparent;
+}
+
 button{
     position: relative;
     display: inline-block;
@@ -66,4 +77,8 @@ button:hover {
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 100px #03e9f4;
-  }
+}
+.signup__field__input--birth-month, 
+.signup__field__input--birth-day, 
+.signup__field__input--birth-year {
+width: 80px;}
